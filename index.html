@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            position: static;
+            top:70px;
+            font-family: 'Baloo 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/background.jpg');
+            color: white;
+
+        }
+        
+        
+        .left {
+            
+            /* border: 2px solid red; */ 
+            display: inline-block;
+            position: absolute;
+            left: 32px;
+            padding: 5px;
+            
+            
+        }
+
+        .left img{
+            border: 4px solid black;
+        }
+
+        .mid {
+            
+            /* border: 2px solid blue; */
+            display: block;
+            width: 40%;
+            margin: 10px auto;
+            
+        }
+        
+        .right {
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 32px;
+        }
+        
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 0px 20px;
+        }
+        
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        .btn {
+            padding: 10px;
+            margin: 0px 5px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Baloo 2', cursive;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            background-color: rgb(219, 63, 63);
+        }
+
+        #name{
+            font-family: 'Baloo 2', cursive;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .container {
+            border:5px solid #9b9aa7;
+            margin: 70px 40px;
+            width:32%;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .form-group input{
+            
+            width:70%;
+            display: block;
+            text-align: left;
+            margin: 8px auto;
+            padding: 5px;
+            border: 2px solid rgb(8, 8, 8);
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Baloo 2',cursive;  
+            font-weight: bold;
+            font-size: large;
+            cursor: pointer;
+
+        }
+
+        
+
+        .container button{
+            display: block;
+            margin: 20px auto;
+            border: 2px solid black;
+            width: 40%;
+        }
+
+        .container h2{
+            text-align: center;
+        }
+
+        </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left div for logo -->
+        <div class="left">
+
+            <img src="img/logo.jpg" style="height:55px; width:120px ;" alt="Gym Logo">
+            <div id="name">Piyush Fitness</div>
+
+        </div>
+
+        <!-- mid div for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Calorie Calculator</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- right div for search and more -->
+        <div class="right">
+            <button class="btn">
+                Call us now
+            </button>
+            <button class="btn">
+                Email us
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Join the best gym of your city.</h2>
+        <form action="noaction.php">
+            
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name"> 
+                <!-- <input type="text" name="" id="sir_name" placeholder="Enter your age"> -->
+
+            </div>
+
+            <div class="form-group">
+                <input type="text" age="" placeholder="Enter your age">    
+            </div>
+
+            <div class="form-group">
+                <input type="text" gender="" placeholder="Enter your gender">    
+            </div>
+
+            <div class="form-group">
+                <input type="text" email="" placeholder="Enter your Email">    
+            </div>
+
+            <div class="form-group">
+                <input type="text" phone="" placeholder="Enter your Phone no.">    
+            </div>
+            
+            <button class="btn">Submit</button>
+              
+        </form>
+
+    </div>
+
+</body>
+
+</html>
